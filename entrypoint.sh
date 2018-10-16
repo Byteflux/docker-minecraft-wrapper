@@ -6,7 +6,7 @@ stop() {
 
 trap stop SIGTERM
 
-screen -dmS app java \
+screen -dmS wrapper java \
   "-Xms$HEAP_SIZE" \
   "-Xmx$HEAP_SIZE" \
   -XX:+UseG1GC \
