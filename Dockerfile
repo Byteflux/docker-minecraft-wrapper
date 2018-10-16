@@ -18,7 +18,7 @@ RUN apk add --update screen && \
 USER wrapper
 WORKDIR /data
 
-COPY wrapper-send /usr/bin/
+COPY wrapper-exec /usr/bin/
 COPY entrypoint.sh /
 
 CMD ["/entrypoint.sh"]

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 stop() {
-  wrapper-send "$SHUTDOWN_COMMAND"
+  wrapper-exec "$SHUTDOWN_COMMAND"
 }
 
 trap stop SIGTERM
