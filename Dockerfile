@@ -1,5 +1,7 @@
 FROM anapsix/alpine-java:8
 
+LABEL maintainer="byte@byteflux.net"
+
 ENV JAR_FILE=server.jar \
     HEAP_SIZE=1G \
     SHUTDOWN_COMMAND=stop \
