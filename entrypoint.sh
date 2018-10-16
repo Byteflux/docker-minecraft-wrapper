@@ -4,7 +4,7 @@ stop() {
   wrapper-exec "$SHUTDOWN_COMMAND"
 }
 
-trap stop SIGTERM
+trap stop SIGTERM SIGINT SIGQUIT
 
 screen -dmS wrapper java \
   "-Xms$HEAP_SIZE" \
